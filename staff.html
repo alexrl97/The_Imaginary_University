@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Courses</title>
+    <link rel="stylesheet" href="admin_and_staff.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>THE IMAGINARY UNIVERSITY</h1>
+    <div class="navbar">
+        <a class="active">Courses</a>
+        <a href="login.html" class="right">Logout</a>
+    </div>
+    <script src="admin_and_staff.js"></script>
+    <script>
+        createCourseButtons();
+    </script>
+</div>
+
+<div class="container">
+    <br />
+    <fieldset>
+        <legend>Student List
+        </legend>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Course</th>
+
+            </tr>
+            </thead>
+            <tbody id="tblbody2">
+            </tbody>
+        </table>
+    </fieldset>
+
+</div>
+
+<script src = "admin_and_staff.js"></script>
+
+</body>
+</html>

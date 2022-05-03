@@ -1,0 +1,37 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>University Login Form</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <script type="text/javascript" src="login.js">
+    </script>
+</head>
+<body>
+
+<div class="header">
+    <h1>THE IMAGINARY UNIVERSITY</h1>
+</div>
+
+<form id="staff_form" class="staff_box" method="post" action="" onsubmit="return check_form_staff();">
+
+    <h1>
+        Staff Login
+        <input type="text" name="" placeholder="Enter Username" id="staff_username">
+        <input type="password" name="" placeholder="Enter Password" id="staff_password">
+        <input type="submit" name="" value="Login">
+    </h1>
+
+</form>
+
+<form id="admin_form" class="admin_box" method="post" action="" onsubmit="return check_form_admin();">
+
+    <h1>
+        Admin Login
+        <input type="text" name="" placeholder="Enter Username" id="admin_username">
+        <input type="password" name="" placeholder="Enter Password" id="admin_password">
+        <input type="submit" name="" value="Login">
+    </h1>
+</form>
+
+</body>
+</html>

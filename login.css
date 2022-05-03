@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: large;
+}
+.staff_box, .admin_box{
+    width:300px;
+    padding:30px;
+    text-align: center;
+    color: black;
+    font-weight: 1000;
+}
+.staff_box h1{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 30%;
+}
+
+.admin_box h1{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 70%;
+}
+
+.staff_box input[type="text"],.staff_box input[type="password"], .admin_box input[type="text"],.admin_box input[type="password"]{
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border:3px solid black;
+    padding: 14px 10px;
+    width: 220px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    cursor: pointer;
+}
+.staff_box input[type="text"]:focus,.staff_box input[type="password"]:focus, .admin_box input[type="text"]:focus,.admin_box input[type="password"]:focus{
+    width: 270px;
+    border-color: black;
+}
+.staff_box input[type="submit"], .admin_box input[type="submit"]{
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid black;
+    padding: 14px 10px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    cursor: pointer;
+}
+.staff_box input[type="submit"]:hover, .admin_box input[type="submit"]:hover{
+    background: rgba(0, 255, 0, 0.65);
+}
+.header {
+    padding: 1px;
+    text-align: left;
+    background: black;
+    color: white;
+    font-size: 10px;
+}
+.header h1{
+    padding-left:20px;
+}
