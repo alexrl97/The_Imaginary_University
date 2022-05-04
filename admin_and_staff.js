@@ -106,7 +106,8 @@ function addPerson(person){
 
 document.getElementById("btnaddPerson").addEventListener("click", function (event) {
     event.preventDefault()
-    var ID = CreateUniqueID();
+
+    var ID = document.getElementById("txtID").value;
     var FirstName = document.getElementById("txtFirstName").value;
     var LastName = document.getElementById("txtLastName").value;
     var DOB = document.getElementById("txtDOB").value;
@@ -130,8 +131,9 @@ document.getElementById("btnaddPerson").addEventListener("click", function (even
         + "</td>"
         + "</tr>";
 
-    if(FirstName != "" && Department != "" && EMail != "") {
+    if(ID!= "" && FirstName != "" && Department != "" && EMail != "") {
         document.getElementById('tblbody').innerHTML += tablerow;
+        document.getElementById('txtID').value = "";
         document.getElementById('txtFirstName').value = "";
         document.getElementById('txtLastName').value = "";
         document.getElementById('txtPostalCode').value = "";
@@ -140,10 +142,13 @@ document.getElementById("btnaddPerson").addEventListener("click", function (even
         document.getElementById('txtDepartment').value = "";
         document.getElementById('txtMail').value = "";
         document.getElementById('txtFirstName').style.backgroundColor = "white";
+        document.getElementById('txtFirstName').style.backgroundColor = "white";
         document.getElementById('txtDepartment').style.backgroundColor = "white";
         document.getElementById('txtMail').style.backgroundColor = "white";
     }
     else{
+        if(ID == "")
+            document.getElementById('txtID').style.backgroundColor = "rgba(254,0,0,0.4)";
         if(FirstName == "")
             document.getElementById('txtFirstName').style.backgroundColor = "rgba(254,0,0,0.4)";
         if(Department == "")
