@@ -22,6 +22,28 @@
     <fieldset>
         <legend>Students List
         </legend>
+
+        <label for="filterDepartment">Department Filter:</label>
+        <select id="filterDepartment">
+            <option value="All">All Departments</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="Programming">Programming</option>
+            <option value="Computer Networks">Computer Networks</option>
+            <option value="Data Banks">Data Banks</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Computer Graphics">Computer Graphics</option>
+        </select>
+
+        <label for="filterSemester"> Semester Filter:</label>
+        <select id="filterSemester">
+            <option value="All">All Semesters</option>
+            <option value="SS">Summer Semester</option>
+            <option value="WW">Winter Semester</option>
+        </select>
+
+        <br />
+        <br />
+
         <table class="table">
             <thead>
             <tr>
@@ -29,6 +51,7 @@
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Date of birth</th>
+                <th>Joining Date</th>
                 <th>Gender</th>
                 <th>Course</th>
                 <th>E-Mail</th>
@@ -47,7 +70,7 @@
             </legend><br />
 
             <label>Student ID:*</label>
-            <input type="text" name="txtFirstName" id="txtID" class="form-control" value="" required="">
+            <input type="number" name="txtFirstName" id="txtID" class="form-control" value="" required="">
 
             <label>First Name:*</label>
             <input type="text" name="txtFirstName" id="txtFirstName" class="form-control" value="" required="">
@@ -55,27 +78,30 @@
             <label>Last Name:</label>
             <input type="text" name="txtLastName" id="txtLastName" class="form-control" value="" required="">
 
-            <label>Date of birth:</label>
+            <label>Date of birth:*</label>
             <input type="date" name="txtDOB" id="txtDOB" class="form-control" value="" required="">
 
-            <label>Gender:</label>
-            <input type="text" list="genders" name="txtGender" id="txtGender" class="form-control" value="" required="">
-            <datalist id="genders">
-                <option>Male</option>
-                <option>Female</option>
-                <option>Diverse</option>
-            </datalist>
+            <label>Joining Date:*</label>
+            <input type="date" name="txtJoinDate" id="txtJoinDate" class="form-control" value="" required="" min="2015-01-01">
 
-            <label>Department:*</label>
-            <input type="text" list="departments" name="txtDepartment" id="txtDepartment" class="form-control" value="" required="">
-            <datalist id="departments">
-                <option>Mathematics</option>
-                <option>Programming</option>
-                <option>Computer Networks</option>
-                <option>Data Banks</option>
-                <option>Web Development</option>
-                <option>Computer Graphics</option>
-            </datalist>
+            <label for="txtGender">Gender:</label>
+            <select id="txtGender">
+                <option value=""></option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Diverse">Diverse</option>
+            </select>
+
+            <label for="txtDepartment">Department:*</label>
+            <select id="txtDepartment">
+                <option value=""></option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="Programming">Programming</option>
+                <option value="Computer Networks">Computer Networks</option>
+                <option value="Data Banks">Data Banks</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Computer Graphics">Computer Graphics</option>
+            </select>
 
             <label>E-Mail:*</label>
             <input type="text" name="txtMail" id="txtMail" class="form-control" value="" required="">
